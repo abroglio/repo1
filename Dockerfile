@@ -1,6 +1,4 @@
 FROM centos
 
-RUN yum update && \
-    yum install -y vim && \
-    yum clean all
+RUN yum update -y && yum install -y httpd && yum clean all
 CMD echo "Hello World"
